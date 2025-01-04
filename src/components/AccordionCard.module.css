@@ -1,0 +1,62 @@
+.partHead {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  padding: 24px 0 24px 0;
+}
+.part:not(:last-child) {
+  border-bottom: 1px solid #f8eeff;
+}
+.part p:last-child {
+  color: #8b6990;
+  transition: margin 0.4s ease;
+  /*24px - 20px _ 600vw - 327vw */
+  padding-bottom: clamp(1.25rem, 0.9505rem + 1.4652vw, 1.5rem);
+  /*24px - 20px _ 600vw - 327vw */
+  /* padding-bottom: clamp(1.25rem, 0.9505rem + 1.4652vw, 1.5rem); */
+}
+.partHead > h4 {
+  color: #301534;
+   /*18px - 16px _ 600vw - 327vw */
+  font-size: clamp(1rem, 1rem + 0vw, 1rem);
+  font-weight: 600;
+}
+.partHead:hover > h4 {
+  transition: 0.4s;
+  color: #AD28EB;
+}
+.partHead > img {
+  margin-left: 15px;
+}
+.contentCont {
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+  /* max-height: 0; */
+}
+.contentConttVisible {
+  max-height: 300px;
+}
+.contentContHidden {
+  max-height: 0;
+}
+.faqs {
+  color:#301534;
+
+  /* Display */
+  font-family: "Work Sans";
+   /*56px - 32px _ 600vw - 327vw */
+  font-size: clamp(2rem, 0.2033rem + 8.7912vw, 3.5rem);
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.cardHeader{
+  /*12px - 0px _ 600vw - 327vw */
+  margin-bottom: clamp(0rem, -0.8984rem + 4.3956vw, 0.75rem);
+}
+.cardHeader > img{
+   /*40px - 20px _ 600vw - 327vw */
+   width: clamp(1.25rem, -0.2473rem + 7.326vw, 2.5rem);
+   height: clamp(1.25rem, -0.2473rem + 7.326vw, 2.5rem);
+   margin-right: 24px;
+}
